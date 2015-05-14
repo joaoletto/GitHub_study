@@ -1,6 +1,7 @@
 # GitHub_study
 
-- primeiros comandos
+- primeiros comandos  
+
 **cd** entra em um diretório  
 **cd ..** sai de um diretório  
 **clear** limpa tela do terminal  
@@ -56,12 +57,13 @@
 
 
 # comandos de formatação do README.md
-colocar em negrito (**texto**)  
-título (#Título)
-lista com marcador (usar - )
+**texto em negrito** colocar o texto entre dois pares de *  
+#criar titulo# colocar um cerquilha na frente do texto
+- lista com marcador (usar - )
 criar link ( [colocar o texto entre colchetes] (e o endereço na frente entre chaves))
 
-- teste
+- teste  
+
 # nivel 1  
 ## nivel 2  
 ### nivel 3  
