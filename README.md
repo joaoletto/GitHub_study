@@ -58,8 +58,8 @@
 
 # comandos de formatação do README.md
 **texto em negrito** colocar o texto entre dois pares de *  
-#criar titulo# colocar um cerquilha na frente do texto
-- lista com marcador (usar - )
+- lista com marcador (usar - )  
+
 criar link ( [colocar o texto entre colchetes] (e o endereço na frente entre chaves))
 
 - teste  
