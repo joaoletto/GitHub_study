@@ -1,3 +1,5 @@
+# primeiros comandos
+-------------------------------------------------------------------------
 cd  	 	-  entra em um diretório
 cd ..    	-  sai de um diretório
 clear 	 	-  limpa tela do terminal
@@ -14,12 +16,14 @@ git add .	-  adiciona todos os arquivos de todos os tipos
 
 git commit -m "comentário"  - confirma o envio para o repositório
 
+# resumo
 -------------------------------------------------------------------------
 1 - adicionar arquivos local
 2 - git add, envia seus arquivos para uma área de espera
 3 - commit, confirma o envio dos arquivos para o repositório
--------------------------------------------------------------------------
 
+# gitignore
+-------------------------------------------------------------------------
 .gitignore	-  é um arquivo que ignora arquivos ou pastas
 
 ATALHO:
@@ -27,6 +31,8 @@ ATALHO:
 
 git commit -a -m "Comentario"
 
+
+# comandos diversos
 -------------------------------------------------------------------------
 
 git diff	-  verifica as alterações feitas localmente
@@ -39,9 +45,10 @@ git reset HEAD nome-arquivo  -  remove um arquivo da stage
 git checkout --nomearquivo   -  descarta alterações feitas num arquivo na stage
 git rm arquivo  -  elimina um arquivo
 
+
+# tags
 -------------------------------------------------------------------------
 
-TAGS anotadas
  - servem para marcar um ponto no controle de versão e transitar entre estes pontos. Ex: tem a versão 0.0 e 1.0, criando uma tag é possivel transitar entre estas versões e verificar como era o projeto em cada uma delas. O melhor para criar versões são os branch.
 
 git tag -a v0.0 (chavedocommit) -m "Versão 0.0"
@@ -52,9 +59,9 @@ git checkout (tag)  -  muda para a tag específica
 git checkout master -  volta para a tag master
 git tag -d (tag)    -  deletar uma tag
 
--------------------------------------------------------------------------
 
-BRANCH (criar ambiente de testes)
+# branch
+-------------------------------------------------------------------------
 
 git branch teste      - cria um branch de teste
 git checkout teste    - muda do branch master para teste
@@ -64,3 +71,7 @@ git merge teste - mistura as alterações do branch teste com o branch master
 git branch -d teste   - deleta o branch teste
 
 
+# git e github online
+-------------------------------------------------------------------------
+
+git push origin master   -  envia as alterações do pc para o github
