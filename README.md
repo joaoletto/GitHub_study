@@ -1,1 +1,79 @@
 # GitHub_study
+
+- primeiros comandos
+-------------------------------------------------------------------------
+cd  	 	-  entra em um diretório
+cd ..    	-  sai de um diretório
+clear 	 	-  limpa tela do terminal
+git init 	-  cria um repositório vazio (é criada a pasta .git, oculta no 						windows)
+git status	-  mostra a situação do repositório
+
+* após adicionar os arquivos do projeto, é necessário fazer um git add para acompanhar as alterações e ter o controle de versões pelo git
+
+git add		-  adiciona um arquivo no controle de versão
+git add *.txt	-  adiciona todos os arquivos do mesmo tipo
+git add .	-  adiciona todos os arquivos de todos os tipos
+
+* comitar - confirmar as mudanças do projeto.
+
+git commit -m "comentário"  - confirma o envio para o repositório
+
+# resumo
+-------------------------------------------------------------------------
+1 - adicionar arquivos local
+2 - git add, envia seus arquivos para uma área de espera
+3 - commit, confirma o envio dos arquivos para o repositório
+
+# gitignore
+-------------------------------------------------------------------------
+.gitignore	-  é um arquivo que ignora arquivos ou pastas
+
+ATALHO:
+* faz o add e o comit ao mesmo tempo, sem passar pela área de espera
+
+git commit -a -m "Comentario"
+
+
+# comandos diversos
+-------------------------------------------------------------------------
+
+git diff	-  verifica as alterações feitas localmente
+git log		-  histórico de todos os commits
+q		-  finaliza o relatório de log
+gitk		-  abre interface de relatórios de alterações
+git log --pretty=oneline - mostra os commits sem detalhes
+git commit --amend -m "altera o comit anterior"  -  edita o commit mais recente
+git reset HEAD nome-arquivo  -  remove um arquivo da stage
+git checkout --nomearquivo   -  descarta alterações feitas num arquivo na stage
+git rm arquivo  -  elimina um arquivo
+
+
+# tags
+-------------------------------------------------------------------------
+
+ - servem para marcar um ponto no controle de versão e transitar entre estes pontos. Ex: tem a versão 0.0 e 1.0, criando uma tag é possivel transitar entre estas versões e verificar como era o projeto em cada uma delas. O melhor para criar versões são os branch.
+
+git tag -a v0.0 (chavedocommit) -m "Versão 0.0"
+
+git tag             -  lista as tags existentes
+git show (tag)      -  mostrar informações da tag
+git checkout (tag)  -  muda para a tag específica
+git checkout master -  volta para a tag master
+git tag -d (tag)    -  deletar uma tag
+
+
+# branch
+-------------------------------------------------------------------------
+
+git branch teste      - cria um branch de teste
+git checkout teste    - muda do branch master para teste
+* git checkout -b teste - cria o branch teste e já muda para ele
+
+git merge teste - mistura as alterações do branch teste com o branch master
+git branch -d teste   - deleta o branch teste
+
+
+# git e github online
+-------------------------------------------------------------------------
+
+git push origin master   -  envia as alterações do pc para o github
